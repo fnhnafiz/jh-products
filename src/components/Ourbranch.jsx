@@ -19,27 +19,27 @@ function Ourbranch() {
         </div>
         {/* Branch Icons */}
         <div className="flex border justify-center gap-4 md:gap-8 py-10 overflow-hidden">
-          <div className="flex flex-col items-center border border-transparent  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
+          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] border border-transparent hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
             <img src={COIMBATORE} className="w-[92px] h-[92px] mb-1" />
             <p className="text-xs font-medium text-black">COIMBATORE</p>
           </div>
-          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
+          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] border border-transparent hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
             <img src={CHENNAI} className="w-[92px] h-[92px] mb-1" />
             <p className="text-xs font-medium text-black">COIMBATORE</p>
           </div>
-          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
+          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] border border-transparent hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
             <img src={HYDERABAD} className="w-[92px] h-[92px] mb-1" />
             <p className="text-xs font-medium text-black">COIMBATORE</p>
           </div>
-          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
+          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] border border-transparent hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
             <img src={GOA} className="w-[92px] h-[92px] mb-1" />
             <p className="text-xs font-medium text-black">COIMBATORE</p>
           </div>
-          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
+          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] border border-transparent hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
             <img src={KOCHI} className="w-[92px] h-[92px] mb-1" />
             <p className="text-xs font-medium text-black">COIMBATORE</p>
           </div>
-          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
+          <div className="flex flex-col items-center  px-4 py-2 rounded-xl hover:border hover:border-[#A8E61D] border border-transparent hover:bg-[#f7fce8] hover:text-[#002B55] cursor-pointer">
             <img src={MUMBAI} className="w-[92px] h-[92px] mb-1" />
             <p className="text-xs font-medium text-black">COIMBATORE</p>
           </div>

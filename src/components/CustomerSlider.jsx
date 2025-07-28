@@ -5,15 +5,15 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 function CustomerSlider() {
   return (
     <>
-      <section className="container mx-auto border p-8">
+      <section className="container p-8">
         <h1 className="text-center text-5xl text-[#1A1A1A] font-medium">
           Why Customers Love ❤️ Us?
         </h1>
         {/* reviews content container*/}
-        <div className="flex flex-col md:flex-row md:justify-between py-12">
+        <div className="flex flex-col gap-8 md:flex-row md:justify-between py-12 ">
           {/* left content */}
-          <div className="w-full md:w-7/12 lg:w-8/12 px-8 flex flex-col justify-between ">
-            <div>
+          <div className="w-full md:w-7/12 lg:w-8/12 px-8 flex flex-col rounded-2xl justify-between bg-[#f2f4f6]">
+            <div className="space-y-8">
               <div>
                 <img src={quote} alt="" />
               </div>
@@ -32,12 +32,12 @@ function CustomerSlider() {
                 alt=""
               />
               <div className="z-10 flex justify-between w-full px-8">
-                <h1>- Samuel Varughese</h1>
+                <h1 className="text-3xl font-medium">- Samuel Varughese</h1>
                 <div className="flex gap-5">
-                  <div>
+                  <div className="border p-4 rounded-full">
                     <FaArrowLeft />
                   </div>
-                  <div>
+                  <div className="border p-4 rounded-full">
                     <FaArrowRight />
                   </div>
                 </div>
@@ -45,7 +45,7 @@ function CustomerSlider() {
             </div>
           </div>
           {/* right image content */}
-          <div className="w-full md:w-5/12 lg:w-4/12">
+          <div className="w-full md:w-5/12 lg:w-4/12 bg-[#f2f4f6] rounded-2xl p-4">
             <img className="w-full" src={man} alt="" />
           </div>
         </div>
