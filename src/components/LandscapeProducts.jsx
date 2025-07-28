@@ -1,15 +1,63 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../index.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import image from "../assets/card5.png";
 import image1 from "../assets/card6.png";
 import image2 from "../assets/card7.png";
 import image3 from "../assets/card8.png";
 function LandscapeProducts() {
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "80px",
+    slidesToShow: 4,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "30px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "10px",
+        },
+      },
+    ],
+  };
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
   return (
     <>
-      <section className="container space-y-8 my-28">
-        <h1 className="text-5xl font-medium">Landscape Products</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="slider-container container my-28">
+        <h1 className="text-5xl font-medium my-10">Landscape Products</h1>
+        <Slider {...settings} className="mx-4 [&_.slick-slide]:px-2">
           {/* card 1 */}
-          <div className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5">
+          <div
+            className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div>
               <img className="w-full" src={image} alt="" />
             </div>
@@ -22,7 +70,11 @@ function LandscapeProducts() {
             </div>
           </div>
           {/* card 2 */}
-          <div className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5">
+          <div
+            className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div>
               <img className="w-full" src={image1} alt="" />
             </div>
@@ -35,7 +87,11 @@ function LandscapeProducts() {
             </div>
           </div>
           {/* card 3 */}
-          <div className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5">
+          <div
+            className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div>
               <img className="w-full" src={image2} alt="" />
             </div>
@@ -48,7 +104,11 @@ function LandscapeProducts() {
             </div>
           </div>
           {/* card 4 */}
-          <div className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5">
+          <div
+            className="bg-[#F2F4F6] p-[10px] rounded-xl  space-y-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div>
               <img className="w-full" src={image3} alt="" />
             </div>
@@ -60,8 +120,8 @@ function LandscapeProducts() {
               </button>
             </div>
           </div>
-        </div>
-      </section>
+        </Slider>
+      </div>
     </>
   );
 }

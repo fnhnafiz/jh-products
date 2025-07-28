@@ -1,20 +1,35 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import icon1 from "../assets/icon/icon1.png";
 import icon2 from "../assets/icon/icon2.png";
 import icon3 from "../assets/icon/icon3.png";
 function TrustedCustomer() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false, mirror: true });
+  }, []);
   return (
     <>
       <section className="container mx-auto bg-[#002b55] px-4 sm:px-8 lg:px-16 py-12 sm:py-16 rounded-xl text-white relative overflow-hidden">
         <div className="absolute w-[497px] h-[497px] bg-[#1B7FE166] rounded-full blur-3xl -bottom-[400px] left-1/2 -translate-x-1/2 z-0"></div>
 
-        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-10 relative z-10">
+        <h1
+          className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-10 relative z-10"
+          data-aos="zoom-in"
+        >
           Trusted by over 6K+ customers
         </h1>
 
         {/* icon details container*/}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center relative z-10">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center relative z-10"
+          data-aos="fade-up"
+        >
           {/* icon 1 */}
-          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4">
+          <div
+            className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4"
+            data-aos="fade-right"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center">
               <img src={icon1} className="w-11 h-11" alt="Premium Products" />
             </div>
@@ -25,7 +40,10 @@ function TrustedCustomer() {
           </div>
 
           {/* icon 2 */}
-          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4">
+          <div
+            className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4"
+            data-aos="fade-up"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center">
               <img src={icon2} className="w-11 h-11" alt="Google Reviews" />
             </div>
@@ -36,7 +54,10 @@ function TrustedCustomer() {
           </div>
 
           {/* icon 3 */}
-          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4">
+          <div
+            className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4"
+            data-aos="fade-left"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center">
               <img
                 src={icon3}

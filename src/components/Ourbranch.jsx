@@ -4,6 +4,7 @@ import HYDERABAD from "../assets/country/icon3.png";
 import GOA from "../assets/country/icon4.png";
 import KOCHI from "../assets/country/icon5.png";
 import MUMBAI from "../assets/country/icon6.png";
+import logo from "../assets/logo.png";
 // COIMBATORE', 'CHENNAI', 'HYDERABAD', 'GOA', 'KOCHI', 'MUMBAI'
 
 function Ourbranch() {
@@ -90,7 +91,7 @@ function Ourbranch() {
               loading="lazy"
             ></iframe>
             <div className="absolute bottom-4 left-4 right-4 bg-white text-[#002B55] rounded-xl p-4 text-sm shadow-md flex gap-2">
-              <img src="" alt="location-icon" className="w-6 h-6 mt-1" />
+              <img src={logo} alt="location-icon" className="w-12 h-12 mt-1" />
               <p>
                 <strong>JRR Towers</strong> (2nd Floor), Pattalamma Temple Rd,
                 <br />
