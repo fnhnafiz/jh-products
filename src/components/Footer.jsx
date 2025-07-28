@@ -6,7 +6,7 @@ function Footer() {
     <footer className="container mx-auto pb-12">
       <div className="rounded-xl bg-[#002B55] text-white relative overflow-hidden px-4 md:px-12 lg:px-20 py-28">
         {/* Background blur shape */}
-        <div className="absolute w-[741px] h-[741px] bg-[#1B7FE166] rounded-full blur-3xl -bottom-[500px] -left-[150px] z-0"></div>
+        <div className="absolute w-[741px] h-[741px] bg-[#1b7ee14f] rounded-full blur-3xl -bottom-[500px] -left-[150px] z-0"></div>
 
         {/* Content container */}
         <div className="w-full space-y-10 md:flex gap-10 md:justify-between z-40">

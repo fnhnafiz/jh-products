@@ -4,3 +4,8 @@
 body {
   font-family: "Inter", sans-serif;
 }
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[1280px];
+  }
+}
